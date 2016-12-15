@@ -1,4 +1,5 @@
-# Parser for headtracker razorAHRS - compatible with razorAHRS firmware version 1.4.3
+# Parser for headtracker razorAHRS
+# compatible with razorAHRS firmware version 1.4.3
 
 ##### Program to read binary data stream of the [RazorAHRS](https://github.com/ptrbrtz/razor-9dof-ahrs) headtracker, written in C. Contains a parser and a virtual headtracker.
 
@@ -22,7 +23,8 @@ $ gcc /src/main_razorAHRS.c -Wall -D_REENTRANT -lpthread -o /bin/main_razorAHRS
 #### Preparing the tracker
 Open the file Arduino/Razor_AHRS/Razor_AHRS.ino and select your Hardware under "USER SETUP AREA" / "HARDWARE OPTIONS". (If you have a SparkFun 9DOF Razor IMU and problems to decide wether you have version SEN-10125 or SEN-10736, have a close look at the Magnetometer module that is a little black brick under the printed label "9DOF RAZOR" and right sided to the GND-connector. If this module has 4 pins on each side it is the version SEN-10736, if it has 5 pins it is the version 10125.) Upload the firmware using Arduino.
 
-Maybe you want to calibrate the tracker, you can do it manually. Therefore you can find a good [tutorial](https://github.com/ptrbrtz/razor-9dof-ahrs/wiki/Tutorial#sensor-calibration) by Peter Bartz. The other option is to use a graphical semi-automatic calibration assistent (See _Calibration Assistant_ below ).
+Maybe you want to calibrate the tracker. It is recommended. Therefore you can find a good [tutorial](https://github.com/ptrbrtz/razor-9dof-ahrs/wiki/Tutorial#sensor-calibration) by Peter Bartz.
+
 
 #### Run it (the reader is wrapped in a main function to demonstration):
 ```bash
